@@ -2,6 +2,9 @@ package com.example.demo2.domain;
 
 public class Employee {
 
+    /**
+     *
+     */
     private int id;
     private String firstName;
     private String lastName;
@@ -15,12 +18,24 @@ public class Employee {
                 '}';
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
     public static final class EmployeeBuilder {
         private int id;
         private String firstName;
         private String lastName;
 
-        EmployeeBuilder() {
+        public EmployeeBuilder() {
         }
 
         public static EmployeeBuilder anEmployee() {
