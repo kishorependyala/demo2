@@ -24,6 +24,10 @@ public class EmployeeControllerTest {
     private MockMvc mvc;
 
     @Test
+    public void test(){
+
+    }
+
     public void employee() throws Exception{
 
         mvc.perform(MockMvcRequestBuilders.get("/employee").accept(MediaType.APPLICATION_JSON))
